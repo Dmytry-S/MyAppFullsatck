@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="main_page">
+    <h2>About</h2>
+    {% load static %}
+    <img src="{% static 'images/photo_in_field.jpg' %}" width="300px" title="My Photo" alt="My photo in field">
+    <div class="desc_text">
+        <p><b>Description</b></p>
+        <p class="text_sample">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste modi fuga, tempora dolorum rem vero, unde exercitationem, eligendi magni at molestiae provident ut perspiciatis temporibus mollitia sint libero! Rerum?
+        </p>
+    </div>
+    <div>
+        <table border="1" width="600px">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+            </tr>
+            </thead>
+            <tbody align="center">
+            <tr>
+                <td>Dmytro</td>
+                <td>Svyrydov</td>
+                <td id="1">{{ my_job }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p></p>
+</div>
+{% endblock %}

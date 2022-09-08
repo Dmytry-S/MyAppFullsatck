@@ -1,0 +1,14 @@
+.text_sample {
+    color:navy;
+}
+
+.desc_text {
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    background: beige;
+}
+
+.main_page {
+    align-items: center;
+}
